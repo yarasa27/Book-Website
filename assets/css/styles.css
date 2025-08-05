@@ -256,7 +256,9 @@ img {
 }
 
 /* Show search */
-
+.show-search{
+  top: 0;
+}
 
 /*=============== LOGIN ===============*/
 
