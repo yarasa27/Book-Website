@@ -15,7 +15,7 @@ if(searchClose) {
     })
 }
 
-/*=============== LOGIN ===============*/
+/* LOGIN */
 const loginButton = document.getElementById('login-button'),
       loginClose = document.getElementById('login-close'),
       loginContent = document.getElementById('login-content')
@@ -32,7 +32,7 @@ if(loginClose) {
     })
 }
 
-/*=============== ADD SHADOW HEADER ===============*/
+/* ADD SHADOW HEADER */
 const shadowHeader = () => {
     const header = document.getElementById('header')
     this.scrollY >= 50 ? header.classList.add('shadow-header')
@@ -40,7 +40,7 @@ const shadowHeader = () => {
 }
 window.addEventListener('scroll', shadowHeader)
 
-/*=============== HOME SWIPER ===============*/
+/* HOME SWIPER */
 let swiperHome = new Swiper('.home__swiper', {
     loop: true,
     spaceBetween: -24,
@@ -61,11 +61,29 @@ let swiperHome = new Swiper('.home__swiper', {
     }
 });
 
-/*=============== FEATURED SWIPER ===============*/
+/* FEATURED SWIPER */
 
 
 /*=============== NEW SWIPER ===============*/
+let swiperFeatured = new Swiper('.featured__swiper', {
+    loop: true,
+    spaceBetween: 16,
+    grabCursor: true,
+    slidesPerView: 'auto',
+    centeredSlides: 'auto',
 
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    
+    breakpoints: {
+        1150: {
+            slidesPerView: 4,
+            centeredSlides: false,
+        }
+    }
+});
 
 /*=============== TESTIMONIAL SWIPER ===============*/
 
