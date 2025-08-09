@@ -215,7 +215,9 @@ img {
 }
 
 /* Active link */
-
+.active-link{
+  color: blue;
+}
 
 /*=============== SEARCH ===============*/
 .search{
