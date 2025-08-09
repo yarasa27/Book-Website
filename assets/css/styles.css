@@ -731,7 +731,28 @@ body.dark-theme{
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-
+@media screen and (max-width: 320px) {
+  .container{
+    margin-inline: 1rem;
+  }
+  .nav__menu{
+    padding-inline: 3rem;
+  }
+  .discount__img-1,
+  .discount__img-2{
+    width: 140px;
+  }
+  .new__card{
+    flex-direction: column;
+  }
+  .testimonial__card{
+    padding-inline: 1rem;
+  }
+  .footer__data{
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+}
 
 /* For medium devices */
 
